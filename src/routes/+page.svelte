@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Marquee from "./Marquee.svelte";
   import OrbitingCircles from "./OrbitingCircles.svelte";
     import Reviewcard from "./Reviewcard.svelte";
@@ -45,6 +45,9 @@
   
     let firstRow = reviews.slice(0, reviews.length / 2);
     let secondRow = reviews.slice(reviews.length / 2);
+
+    let className: any = "";
+    export { className as class };
 
     
   </script>
